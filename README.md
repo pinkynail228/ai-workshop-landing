@@ -9,4 +9,3 @@ Recovered static landing source for https://ailending.vercel.app.
 
 ## Workflow
 - Repository rules: [CONTRIBUTING.md](./CONTRIBUTING.md)
-- PR template: [.github/pull_request_template.md](./.github/pull_request_template.md)
