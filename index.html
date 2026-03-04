@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-инструменты для продуктового дизайнера</title>
+    <!-- Google Fonts: Unbounded (Display), Onest (Body), JetBrains Mono (Technical) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- SECTION 1: BRUTALIST HERO -->
+    <section class="brutalist-hero" id="hero">
+        <div class="brutal-left">
+            <video src="grok-video-5ed9e880-8975-466b-a3cd-6b8d54e036e5.mp4" class="hero-image" autoplay loop muted
+                playsinline></video>
+        </div>
+        <div class="brutal-right">
+            <h1 class="brutalist-title reveal-on-scroll">
+                <span class="title-mask"><span>ТЫ</span></span><br>
+                <span class="title-mask" style="--mask-delay: 1"><span>НЕПРАВИЛЬНО</span></span><br>
+                <span class="title-mask" style="--mask-delay: 2"><span>ПИШЕШЬ</span></span><br>
+                <span class="title-mask" style="--mask-delay: 3"><span>ПРОМПТЫ.</span></span>
+            </h1>
+            <p class="brutalist-subtext reveal-on-scroll" style="--delay: 4">
+                Дело не в том, что AI даёт плохой результат. Дело в том, как ты с ним разговариваешь.
+            </p>
+            <div class="brutal-badges reveal-on-scroll" style="--delay: 5">
+                <div class="brutal-badge">27 ФЕВРАЛЯ 18:00 МСК</div>
+                <div class="brutal-badge">СВЯТОСЛАВ ТАРАСОВ</div>
+                <div class="brutal-badge">КОНТУР.ТОЛК</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1.5: INFINITE MARQUEE -->
+    <div class="marquee-section">
+        <div class="marquee-wrapper">
+            <div class="marquee-content">
+                <span>МЕТА-ПРОМПТИНГ</span> <span class="mono-label accent">·</span>
+                <span>CLAUDE</span> <span class="mono-label accent">·</span>
+                <span>STITCH</span> <span class="mono-label accent">·</span>
+                <span>UX PILOT</span> <span class="mono-label accent">·</span>
+                <span>PENCIL.DEV</span> <span class="mono-label accent">·</span>
+                <span>МЕТА-ПРОМПТИНГ</span> <span class="mono-label accent">·</span>
+                <span>CLAUDE</span> <span class="mono-label accent">·</span>
+                <span>STITCH</span> <span class="mono-label accent">·</span>
+                <span>UX PILOT</span> <span class="mono-label accent">·</span>
+                <span>PENCIL.DEV</span> <span class="mono-label accent">·</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 2: THE PROBLEM -->
+    <section class="problem-section container" id="problem">
+        <h2 class="section-title reveal-on-scroll">
+            Почему AI выдаёт тебе<br>
+            <span class="text-dimmed">посредственный дизайн</span>
+        </h2>
+
+        <div class="problem-grid">
+            <!-- Problem 1 -->
+            <div class="problem-card reveal-on-scroll" style="--delay: 1">
+                <div class="card-number">01</div>
+                <h3 class="card-title">Промпт без контекста</h3>
+                <p class="card-text">Ты просишь «нарисовать кнопку», а не «спроектировать primary CTA для дашборда
+                    финтеха с высокой конверсией». Без контекста AI — просто генератор шума.</p>
+            </div>
+
+            <!-- Problem 2 -->
+            <div class="problem-card reveal-on-scroll" style="--delay: 2">
+                <div class="card-number">02</div>
+                <h3 class="card-title">Не тот инструмент</h3>
+                <p class="card-text">ChatGPT не предназначен для генерации UI. Мы тратим часы, заставляя языковые модели
+                    делать то, для чего они буквально не созданы. Для UI есть агенты.</p>
+            </div>
+
+            <!-- Problem 3 -->
+            <div class="problem-card reveal-on-scroll" style="--delay: 3">
+                <div class="card-number">03</div>
+                <h3 class="card-title">AI как поисковик</h3>
+                <p class="card-text">Спросил. Получил ответ. Закрыл. Отношение как к Google. Но с AI первый промпт — это
+                    только рукопожатие. Настоящая магия кроется в итерациях.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: KEY INSIGHT (META-PROMPTING) -->
+    <section class="insight-section container" id="insight">
+        <div class="insight-header reveal-on-scroll">
+            <span class="mono-label">Главный инсайт</span>
+            <h2 class="section-title">Мета-промптинг</h2>
+            <p class="body-large">Это не лайфхак. Это сдвиг мышления.<br>Перестань быть «пользователем» — стань
+                арт-директором для нейросетей.</p>
+        </div>
+
+        <div class="flow-diagram reveal-on-scroll" style="--delay: 2">
+            <div class="flow-node">
+                <span class="node-label">Старт</span>
+                <div class="node-box">Размытая идея</div>
+            </div>
+            <div class="flow-arrow line-anim"></div>
+            <div class="flow-node highlight-node">
+                <span class="node-label">Мозг (Контекст)</span>
+                <div class="node-box">Claude: пишем промпт для агента</div>
+            </div>
+            <div class="flow-arrow line-anim"></div>
+            <div class="flow-node action-node">
+                <span class="node-label">Руки (Исполнение)</span>
+                <div class="node-box">Stitch / UX Pilot: прототипирование</div>
+            </div>
+            <div class="flow-arrow line-anim"></div>
+            <div class="flow-node finish-node">
+                <span class="node-label">Финал</span>
+                <div class="node-box">Новый уровень контроля</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: THE TOOLS -->
+    <section class="tools-section container" id="tools">
+        <h2 class="section-title reveal-on-scroll">Стэк</h2>
+        <div class="tools-list">
+            <!-- Tool 1 -->
+            <div class="tool-row reveal-on-scroll">
+                <div class="tool-meta">
+                    <h3 class="tool-name">Google Stitch</h3>
+                    <span class="mono-label">Генерация UI / Код</span>
+                </div>
+                <div class="tool-details">
+                    <p class="tool-description">Ускоренное прототипирование структур. Идеален для тестирования смелых
+                        концептов и синхронизации с фронтендом. Помогает понять, как устроены современные генеративные
+                        инструменты изнутри.</p>
+                </div>
+            </div>
+
+            <div class="tool-divider reveal-on-scroll"></div>
+
+            <!-- Tool 2 -->
+            <div class="tool-row reveal-on-scroll">
+                <div class="tool-meta">
+                    <h3 class="tool-name">UX Pilot</h3>
+                    <span class="mono-label">Wireframes / User Flows</span>
+                </div>
+                <div class="tool-details">
+                    <p class="tool-description">Инструмент для маппинга пользовательских сценариев. Расширяет
+                        аналитические способности дизайнера, позволяя быстрее валидировать гипотезы и структурно
+                        подходить к объемным PRD.</p>
+                </div>
+            </div>
+
+            <div class="tool-divider reveal-on-scroll"></div>
+
+            <!-- Tool 3 -->
+            <div class="tool-row reveal-on-scroll">
+                <div class="tool-meta">
+                    <h3 class="tool-name">Pencil.dev</h3>
+                    <span class="mono-label">AI Agent в IDE</span>
+                </div>
+                <div class="tool-details">
+                    <p class="tool-description">Новый стандарт взаимодействия дизайна и кода. Позволяет исследовать
+                        возможности нейросетевых агентов прямо в браузере и находить общий язык с техлидами.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: PROGRAM (TIMELINE) -->
+    <section class="program-section container" id="program">
+        <div class="program-layout">
+            <div class="program-header reveal-on-scroll">
+                <h2 class="section-title">Что будет</h2>
+                <p class="body-large">3 часа плотной работы.<br>Только практика. Без философии о «будущем AI».</p>
+            </div>
+
+            <div class="timeline-container">
+                <!-- Block 1 -->
+                <div class="timeline-item reveal-on-scroll">
+                    <div class="time-col mono-label">Блок 1 / 30 мин</div>
+                    <div class="content-col">
+                        <h3 class="item-title">Разогрев и настройка</h3>
+                        <p class="item-desc">Получаем первый рабочий AI-результат за 5 минут. Настраиваем Claude как
+                            главного оркестратора всего процесса.</p>
+                    </div>
+                </div>
+
+                <!-- Block 2 -->
+                <div class="timeline-item reveal-on-scroll">
+                    <div class="time-col mono-label">Блок 2 / 30 мин</div>
+                    <div class="content-col">
+                        <h3 class="item-title">Ментальная модель</h3>
+                        <p class="item-desc">AI vs LLM vs Агент. Убираем инженерный шум и оставляем только то, что
+                            реально нужно понимать продуктовому дизайнеру.</p>
+                    </div>
+                </div>
+
+                <!-- Block 3 -->
+                <div class="timeline-item reveal-on-scroll">
+                    <div class="time-col mono-label">Блок 3 / 30 мин</div>
+                    <div class="content-col">
+                        <h3 class="item-title">Глубокий мета-промптинг</h3>
+                        <p class="item-desc">Учимся писать промпты, которые пишут промпты. Создаём персональную
+                            библиотеку системных инструкций.</p>
+                    </div>
+                </div>
+
+                <!-- Block 4 -->
+                <div class="timeline-item reveal-on-scroll highlight-item">
+                    <div class="time-col mono-label accent">Блок 4 / 60 мин</div>
+                    <div class="content-col">
+                        <h3 class="item-title">Live Demo: Stitch, UX Pilot, Pencil</h3>
+                        <p class="item-desc">Разбираем актуальный стек на реальных примерах из индустрии. Никаких
+                            абстрактных теорий — только то, что работает на рынке прямо сейчас.</p>
+                    </div>
+                </div>
+
+                <!-- Block 5 -->
+                <div class="timeline-item reveal-on-scroll">
+                    <div class="time-col mono-label">Блок 5 / 30 мин</div>
+                    <div class="content-col">
+                        <h3 class="item-title">Своими руками</h3>
+                        <p class="item-desc">Практикуемся на открытых кейсах. Изучаем нейросетевые подходы без риска для
+                            NDA и осваиваем технологии, которые завтра станут стандартом.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: TAKE HOME (ASSETS) -->
+    <section class="assets-section container" id="takeaway">
+        <h2 class="section-title reveal-on-scroll">С чем ты уйдёшь</h2>
+        <div class="assets-list">
+            <div class="asset-item reveal-on-scroll" style="--delay: 1">
+                <div class="asset-line"></div>
+                <h3 class="asset-title">Шаблон мета-промптинга</h3>
+                <p class="asset-desc">Тот самый, который ты откроешь в понедельник утром и сразу пустишь в работу.</p>
+            </div>
+            <div class="asset-item reveal-on-scroll" style="--delay: 2">
+                <div class="asset-line"></div>
+                <h3 class="asset-title">3 инструмента вместо часов в Figma</h3>
+                <p class="asset-desc">Полный сетап и доступ к триалам Stitch, UX Pilot и Pencil.dev.</p>
+            </div>
+            <div class="asset-item reveal-on-scroll" style="--delay: 3">
+                <div class="asset-line"></div>
+                <h3 class="asset-title">Ясное понимание трендов</h3>
+                <p class="asset-desc">Видение того, куда движется индустрия, и набор навыков, чтобы оставаться
+                    востребованным специалистом на острие технологий.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: CLOSING -->
+    <section class="closing-section container reveal-on-scroll" id="closing">
+        <div class="closing-content">
+            <h2 class="closing-title">Индустрия раскалывается<br>на два типа дизайнеров.<br><span
+                    class="text-dimmed">Каким будешь ты?</span></h2>
+            <div class="closing-details">
+                <span class="mono-label">15 Ноября · Контур.Толк · 18:00</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (Minimalist Editorial) -->
+    <footer class="site-footer container">
+        <div class="footer-left">
+            <span class="mono-label">AI Tools Workshop</span>
+        </div>
+        <div class="footer-center">
+            <span class="mono-label text-dimmed">Internal Protocol</span>
+        </div>
+        <div class="footer-right">
+            <span class="mono-label">2026 // Design Dept</span>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
