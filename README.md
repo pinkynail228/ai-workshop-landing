@@ -1,0 +1,8 @@
+# ai-workshop-landing
+
+Recovered static landing source for https://ailending.vercel.app.
+
+## Stack
+- Plain HTML/CSS/JS
+- Static assets (PNG + MP4)
+- Vercel deployment via GitHub integration
