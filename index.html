@@ -67,7 +67,7 @@
     </div>
 
     <!-- SECTION 2: THE PROBLEM -->
-    <section class="problem-section container" id="problem">
+    <section class="problem-section container section-surface section-surface-problem" id="problem">
         <h2 class="section-title reveal-on-scroll">
             Почему AI выдаёт тебе<br>
             <span class="text-dimmed">посредственный дизайн</span>
@@ -78,24 +78,24 @@
             <div class="problem-card reveal-on-scroll" style="--delay: 1">
                 <div class="card-number">01</div>
                 <h3 class="card-title">Промпт без контекста</h3>
-                <p class="card-text">Ты просишь «нарисовать кнопку», а не «спроектировать primary CTA для дашборда
-                    финтеха с высокой конверсией». Без контекста AI — просто генератор шума.</p>
+                <p class="card-text">Запрос «нарисуй кнопку» без задачи и ограничений почти всегда дает шум.
+                    Рабочий промпт задает контекст: роль, продукт и критерии результата.</p>
             </div>
 
             <!-- Problem 2 -->
             <div class="problem-card reveal-on-scroll" style="--delay: 2">
                 <div class="card-number">02</div>
                 <h3 class="card-title">Не тот инструмент</h3>
-                <p class="card-text">ChatGPT не предназначен для генерации UI. Мы часто заставляем языковые модели
-                    делать то, для чего они буквально не созданы. Для UI есть агенты.</p>
+                <p class="card-text">Языковые модели не собирают сильный UI сами по себе. Для интерфейсов нужны
+                    профильные агенты и понятный пайплайн.</p>
             </div>
 
             <!-- Problem 3 -->
             <div class="problem-card reveal-on-scroll" style="--delay: 3">
                 <div class="card-number">03</div>
                 <h3 class="card-title">AI как поисковик</h3>
-                <p class="card-text">Спросил. Получил ответ. Закрыл. Отношение как к Google. Но с AI первый промпт — это
-                    только рукопожатие. Настоящая магия кроется в итерациях.</p>
+                <p class="card-text">Первый ответ AI - только старт. Сильный результат появляется в итерациях, когда
+                    ты уточняешь задачу и корректируешь направление.</p>
             </div>
         </div>
     </section>
@@ -133,7 +133,7 @@
     </section>
 
     <!-- SECTION 4: THE TOOLS -->
-    <section class="tools-section container" id="tools">
+    <section class="tools-section container section-surface section-surface-tools" id="tools">
         <h2 class="section-title reveal-on-scroll">Стэк</h2>
         <div class="tools-list">
             <!-- Tool 1 -->
@@ -143,9 +143,8 @@
                     <span class="mono-label">Генерация UI / Код</span>
                 </div>
                 <div class="tool-details">
-                    <p class="tool-description">Ускоренное прототипирование структур. Идеален для тестирования смелых
-                        концептов и синхронизации с фронтендом. Помогает понять, как устроены современные генеративные
-                        инструменты изнутри.</p>
+                    <p class="tool-description">Быстро собирает структуры и прототипы. Подходит для проверки смелых
+                        концептов и синхронизации с фронтендом.</p>
                 </div>
             </div>
 
@@ -158,9 +157,8 @@
                     <span class="mono-label">Wireframes / User Flows</span>
                 </div>
                 <div class="tool-details">
-                    <p class="tool-description">Инструмент для маппинга пользовательских сценариев. Расширяет
-                        аналитические способности дизайнера, позволяя быстрее валидировать гипотезы и структурно
-                        подходить к объемным PRD.</p>
+                    <p class="tool-description">Помогает разложить пользовательские сценарии и быстрее валидировать
+                        гипотезы по PRD.</p>
                 </div>
             </div>
 
@@ -173,19 +171,19 @@
                     <span class="mono-label">AI Agent в IDE</span>
                 </div>
                 <div class="tool-details">
-                    <p class="tool-description">Новый стандарт взаимодействия дизайна и кода. Позволяет исследовать
-                        возможности нейросетевых агентов прямо в браузере и находить общий язык с техлидами.</p>
+                    <p class="tool-description">Связывает дизайн и код в одном контуре. Ускоряет эксперименты с
+                        агентами и дает общий язык с техлидами.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- SECTION 5: PROGRAM (TIMELINE) -->
-    <section class="program-section container" id="program">
+    <section class="program-section container section-surface section-surface-program" id="program">
         <div class="program-layout">
             <div class="program-header reveal-on-scroll">
                 <h2 class="section-title">Что будет</h2>
-                <p class="body-large">Плотная практическая работа.<br>Без философии о «будущем AI».</p>
+                <p class="body-large">Практика на реальных сценариях.<br>Без теории ради теории.</p>
             </div>
 
             <div class="timeline-container">
@@ -194,8 +192,8 @@
                     <div class="time-col mono-label">Блок 1</div>
                     <div class="content-col">
                         <h3 class="item-title">Разогрев и настройка</h3>
-                        <p class="item-desc">Получаем первый рабочий AI-результат. Настраиваем Claude как
-                            главного оркестратора всего процесса.</p>
+                        <p class="item-desc">Собираем первый рабочий AI-результат и настраиваем Claude как
+                            оркестратор процесса.</p>
                     </div>
                 </div>
 
@@ -204,8 +202,8 @@
                     <div class="time-col mono-label">Блок 2</div>
                     <div class="content-col">
                         <h3 class="item-title">Ментальная модель</h3>
-                        <p class="item-desc">AI vs LLM vs Агент. Убираем инженерный шум и оставляем только то, что
-                            реально нужно понимать продуктовому дизайнеру.</p>
+                        <p class="item-desc">Разбираем AI, LLM и агентный подход простым языком: только то, что нужно
+                            продуктовому дизайнеру.</p>
                     </div>
                 </div>
 
@@ -214,8 +212,7 @@
                     <div class="time-col mono-label">Блок 3</div>
                     <div class="content-col">
                         <h3 class="item-title">Глубокий мета-промптинг</h3>
-                        <p class="item-desc">Учимся писать промпты, которые пишут промпты. Создаём персональную
-                            библиотеку системных инструкций.</p>
+                        <p class="item-desc">Пишем мета-промпты и собираем личную библиотеку системных инструкций.</p>
                     </div>
                 </div>
 
@@ -224,8 +221,8 @@
                     <div class="time-col mono-label accent">Блок 4</div>
                     <div class="content-col">
                         <h3 class="item-title">Live Demo: Stitch, UX Pilot, Pencil</h3>
-                        <p class="item-desc">Разбираем актуальный стек на реальных примерах из индустрии. Никаких
-                            абстрактных теорий — только то, что работает на рынке прямо сейчас.</p>
+                        <p class="item-desc">Показываем Stitch, UX Pilot и Pencil на живых кейсах. Только рабочие
+                            подходы.</p>
                     </div>
                 </div>
 
@@ -234,8 +231,8 @@
                     <div class="time-col mono-label">Блок 5</div>
                     <div class="content-col">
                         <h3 class="item-title">Своими руками</h3>
-                        <p class="item-desc">Практикуемся на открытых кейсах. Изучаем нейросетевые подходы без риска для
-                            NDA и осваиваем технологии, которые завтра станут стандартом.</p>
+                        <p class="item-desc">Практикуемся на открытых кейсах и закрепляем подходы, которые можно
+                            быстро внедрить в реальную работу.</p>
                     </div>
                 </div>
             </div>
@@ -243,30 +240,30 @@
     </section>
 
     <!-- SECTION 7: TAKE HOME (ASSETS) -->
-    <section class="assets-section container" id="takeaway">
+    <section class="assets-section container section-surface section-surface-assets" id="takeaway">
         <h2 class="section-title reveal-on-scroll">С чем ты уйдёшь</h2>
         <div class="assets-list">
             <div class="asset-item reveal-on-scroll" style="--delay: 1">
                 <div class="asset-line"></div>
                 <h3 class="asset-title">Шаблон мета-промптинга</h3>
-                <p class="asset-desc">Тот самый, который ты откроешь и сразу пустишь в работу.</p>
+                <p class="asset-desc">Готовый шаблон, который можно сразу запустить в работу.</p>
             </div>
             <div class="asset-item reveal-on-scroll" style="--delay: 2">
                 <div class="asset-line"></div>
                 <h3 class="asset-title">3 инструмента вместо рутины в Figma</h3>
-                <p class="asset-desc">Полный сетап и доступ к триалам Stitch, UX Pilot и Pencil.dev.</p>
+                <p class="asset-desc">Собранный сетап и доступ к триалам Stitch, UX Pilot и Pencil.dev.</p>
             </div>
             <div class="asset-item reveal-on-scroll" style="--delay: 3">
                 <div class="asset-line"></div>
                 <h3 class="asset-title">Ясное понимание трендов</h3>
-                <p class="asset-desc">Видение того, куда движется индустрия, и набор навыков, чтобы оставаться
-                    востребованным специалистом на острие технологий.</p>
+                <p class="asset-desc">Четкое понимание, куда движется индустрия, и навыки, чтобы оставаться
+                    востребованным специалистом.</p>
             </div>
         </div>
     </section>
 
     <!-- SECTION 8: CLOSING -->
-    <section class="closing-section container reveal-on-scroll" id="closing">
+    <section class="closing-section container reveal-on-scroll closing-poster" id="closing">
         <div class="closing-content">
             <h2 class="closing-title">Индустрия раскалывается<br>на два типа дизайнеров.<br><span
                     class="text-dimmed">Каким будешь ты?</span></h2>
