@@ -7,6 +7,9 @@
     --bg-red: #FF0505;
     --text-primary: #FFFFFF;
     --text-secondary: rgba(255, 255, 255, 0.7);
+    --surface-void: rgba(255, 255, 255, 0.02);
+    --glass-blur: 8px;
+    --accent-light: #e8e8e8;
 
     --border-hairline: rgba(255, 255, 255, 0.15);
 
@@ -725,6 +728,17 @@ body {
     .tools-list .tool-row {
         flex-direction: column;
         gap: 24px;
+        padding: 36px 0;
+    }
+
+    .tool-meta {
+        flex: 0 1 auto;
+        width: 100%;
+        max-width: none;
+    }
+
+    .tool-details {
+        max-width: none;
     }
 
     .program-layout {
@@ -750,6 +764,38 @@ body {
 @media (max-width: 768px) {
     .container {
         padding: 0 24px;
+    }
+
+    .brutal-left {
+        height: 44vh;
+    }
+
+    .brutal-right {
+        padding: 40px 20px 36px;
+    }
+
+    .brutalist-title {
+        font-size: clamp(34px, 9.8vw, 44px);
+        line-height: 0.92;
+        letter-spacing: -0.04em;
+        margin-bottom: 1.25rem;
+        max-width: 100%;
+    }
+
+    .brutalist-subtext {
+        font-size: clamp(17px, 4.8vw, 20px);
+        margin-bottom: 1.75rem;
+        max-width: 100%;
+    }
+
+    .brutal-badges {
+        gap: 8px;
+    }
+
+    .brutal-badge {
+        font-size: 11px;
+        padding: 6px 10px;
+        letter-spacing: 0.04em;
     }
 
     .hero-section {
@@ -796,6 +842,11 @@ body {
 
     .problem-card {
         padding: 32px 24px;
+    }
+
+    .tools-list .tool-row {
+        gap: 14px;
+        padding: 26px 0;
     }
 
     .timeline-item {
