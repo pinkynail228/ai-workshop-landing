@@ -18,8 +18,17 @@
     <!-- SECTION 1: BRUTALIST HERO -->
     <section class="brutalist-hero" id="hero">
         <div class="brutal-left">
-            <video src="grok-video-5ed9e880-8975-466b-a3cd-6b8d54e036e5.mp4" class="hero-image" autoplay loop muted
-                playsinline></video>
+            <video class="hero-image hero-video"
+                data-src="grok-video-5ed9e880-8975-466b-a3cd-6b8d54e036e5.mp4"
+                preload="none"
+                muted
+                playsinline
+                loop></video>
+            <img class="hero-image hero-image-fallback"
+                src="hero.png"
+                alt="Hero visual"
+                loading="eager"
+                decoding="async">
         </div>
         <div class="brutal-right">
             <h1 class="brutalist-title reveal-on-scroll">

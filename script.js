@@ -4,6 +4,38 @@
  */
 
 document.addEventListener("DOMContentLoaded", () => {
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const shouldDisableMotion = isMobile || prefersReducedMotion;
+    const heroVideo = document.querySelector(".hero-video");
+    const revealTargets = document.querySelectorAll(".reveal-on-scroll");
+
+    if (isMobile) {
+        document.body.classList.add("mobile-optimized");
+    }
+
+    if (heroVideo) {
+        if (shouldDisableMotion) {
+            heroVideo.pause();
+            heroVideo.removeAttribute("src");
+            heroVideo.load();
+        } else {
+            const videoSrc = heroVideo.getAttribute("data-src");
+            if (videoSrc) {
+                heroVideo.src = videoSrc;
+                heroVideo.autoplay = true;
+                heroVideo.play().catch(() => {
+                    /* ignore autoplay failures */
+                });
+            }
+        }
+    }
+
+    if (shouldDisableMotion) {
+        revealTargets.forEach(el => el.classList.add("is-visible"));
+        return;
+    }
+
     // 1. Scroll Reveal Logic
     const revealOptions = { root: null, rootMargin: "0px", threshold: 0.15 };
     const revealCallback = (entries, observer) => {
@@ -15,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
     const revealObserver = new IntersectionObserver(revealCallback, revealOptions);
-    document.querySelectorAll(".reveal-on-scroll").forEach(el => revealObserver.observe(el));
+    revealTargets.forEach(el => revealObserver.observe(el));
 
     // 2. Dynamic line animation delay based on flow diagram (Insight section)
     const flowDiagram = document.querySelector('.flow-diagram');
